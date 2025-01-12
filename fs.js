@@ -11,3 +11,7 @@ const writeFile = fs.writeFileSync(
     "utf-8"
 );
 console.log(writeFile);
+
+
+const readfile = fs.readFileSync(filePath, "utf-8");
+console.log(readfile);
