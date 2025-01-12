@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { console } = require('inspector');
 const path = require('path');
 
 const fileName = "text.txt";
@@ -22,3 +23,7 @@ const appenddata = fs.appendFileSync(
     "utf-8"
 )
 console.log(appenddata);
+
+const deletfile = fs.unlinkSync(filePath);
+
+console.log(deletfile);
