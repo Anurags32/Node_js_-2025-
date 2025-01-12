@@ -15,3 +15,10 @@ console.log(writeFile);
 
 const readfile = fs.readFileSync(filePath, "utf-8");
 console.log(readfile);
+
+const appenddata = fs.appendFileSync(
+    filePath,
+    "\nupdated data",
+    "utf-8"
+)
+console.log(appenddata);
