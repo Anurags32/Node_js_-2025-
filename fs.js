@@ -1,3 +1,4 @@
+const { error } = require('console');
 const fs = require('fs');
 const { console } = require('inspector');
 const path = require('path');
@@ -24,6 +25,12 @@ const appenddata = fs.appendFileSync(
 )
 console.log(appenddata);
 
-const deletfile = fs.unlinkSync(filePath);
+// const deletfile = fs.unlinkSync(filePath);
 
-console.log(deletfile);
+// console.log(deletfile);
+
+
+// when try and catch use karne ke lie ham promisses use karte hai
+const filepName = __dirname;
+// const filepPath = path.join(__dirname, filepName);
+fs.promises.readFile(filepName).then((data) => console.log(data)).catch((error) => console.error(error));
