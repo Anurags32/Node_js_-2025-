@@ -4,8 +4,12 @@ const EventEmitter = require("events");
 const emitter = new EventEmitter();
 // define event listener
 
-emitter.on("greet",()=>{
+emitter.on("greet", () => {
     console.log("anurag tiwari");
 });
-
+emitter.on("add", () => {
+    var ab = 4 + 6;
+    console.log(ab);
+})
 emitter.emit("greet");
+emitter.emit("add");
