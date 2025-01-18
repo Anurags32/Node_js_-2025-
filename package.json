@@ -1,5 +1,15 @@
 {
   "dependencies": {
-    "module": "^1.2.5"
-  }
+    "module": "^1.2.5",
+    "nodemon": "^3.1.9"
+  },
+  "name": "node2025",
+  "version": "1.0.0",
+  "description": "2025 node study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anurag",
+  "license": "ISC"
 }
