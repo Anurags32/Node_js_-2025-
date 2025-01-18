@@ -4,6 +4,11 @@ const server = http.createServer((req, res) => {
     if (req.url === "/") {
         res.write("my name is anurag tiwari");
         res.end();
+    };
+    if (req.url === "/anurag") {
+
+        res.write("Experienced Flutter developer with a strong grasp of Dart programming language and expertise  in integrating RESTful APIs, third-party libraries, and Firebase services. Proficient in SDLC and agile methodologies. Strong problem-solving skills and ability to work collaboratively in a team   environment. Seeking challenging opportunities to build innovative mobile applications");
+        res.end();
     }
 });
 // ye exactly event emiter hai
@@ -12,6 +17,6 @@ const server = http.createServer((req, res) => {
 // create web server
 
 const PORT = 3000;
-server.addListener(PORT, () => {
+server.listen(PORT, () => {
     console.log(`lisent this ${PORT}`);
 });
