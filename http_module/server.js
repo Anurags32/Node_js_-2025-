@@ -2,7 +2,7 @@ const http = require("http");
 // const { console } = require("inspector");
 const server = http.createServer((req, res) => {
     if (req.url === "/") {
-        res.write("my name is anurag tiwari");
+        res.write("my name is anurag narendra tiwari ");
         res.end();
     };
     if (req.url === "/anurag") {
