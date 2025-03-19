@@ -8,7 +8,16 @@ const server = https.createServer((req, res) => {
     }else if(req.url === '/about'){
         res.write('About Page');
         res.end();
+    }else if(req.url === '/contact'){
+        res.write('Contact Page');
+        res.end();
+    }else if(req.url === '/portfolio'){
+        res.write('Portfolio Page');
+        res.end();
     }
     
 });
-server.listen(3000);
+PORT = 2000;
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
